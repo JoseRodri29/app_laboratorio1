@@ -7,20 +7,46 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: const Text('App CEUTEC'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'Welcome to the Home Screen',
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            const UserAccountsDrawerHeader(
+              accountName: Text('CEUTEC'),
+              accountEmail: Text('laboratorio1@unitec.edu'),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Colors.blue,
+                backgroundImage: NetworkImage('https://4.bp.blogspot.com/-PL69eQIMEgo/UE1F9vB9AnI/AAAAAAAAAAM/QzREnE3358k/s1600/252134_252401001450427_8011786_n.jpg'),
+              ),
             ),
-            ElevatedButton(
-              onPressed: () {
-              
+            ListTile(
+              title: const Text('Noticias'),
+              leading: const Icon(Icons.newspaper),
+              onTap: () {
+                Navigator.pushNamed(context, '/noticias');
               },
-              child: const Text('Go to Details'),
+            ),
+            ListTile(
+              title: const Text('El cambio de monedas'),
+              leading: const Icon(Icons.currency_exchange),
+              onTap: () {
+                Navigator.pushNamed(context, '/cambioMoneda'); //Aqui lo cambias segun como esta en el path de router
+              },
+            ),
+            ListTile(
+              title: const Text('Lista de tareas'),
+              leading: const Icon(Icons.list),
+              onTap: () {
+                Navigator.pushNamed(context, '/listaTareas'); //Aqui lo cambias segun como esta en el path de router
+              },
+            ),
+            ListTile(
+              title: const Text('Podcast'),
+              leading: const Icon(Icons.headset),
+              onTap: () {
+                Navigator.pushNamed(context, '/podcast'); //Aqui lo cambias segun como esta en el path de router              
+              },
             ),
           ],
         ),
