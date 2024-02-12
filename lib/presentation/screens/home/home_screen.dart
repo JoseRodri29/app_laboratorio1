@@ -31,14 +31,14 @@ class HomeScreen extends StatelessWidget {
               title: const Text('El cambio de monedas'),
               leading: const Icon(Icons.currency_exchange),
               onTap: () {
-                Navigator.pushNamed(context, '/cambioMoneda'); //Aqui lo cambias segun como esta en el path de router
+                Navigator.pushNamed(context, '/cambioMoneda');
               },
             ),
             ListTile(
               title: const Text('Lista de tareas'),
               leading: const Icon(Icons.list),
               onTap: () {
-                Navigator.pushNamed(context, '/listaTareas'); //Aqui lo cambias segun como esta en el path de router
+                Navigator.pushNamed(context, '/listaTareas');
               },
             ),
             ListTile(
