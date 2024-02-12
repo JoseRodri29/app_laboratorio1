@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter_laboratorio_1/presentation/screens/divisas/divisas_screen.dart';
+import 'package:flutter_laboratorio_1/presentation/screens/home/monedas_screen.dart';
 import 'package:flutter_laboratorio_1/presentation/screens/home/home_screen.dart';
 import 'package:flutter_laboratorio_1/presentation/screens/noticias_screen.dart';
 import 'package:flutter_laboratorio_1/presentation/screens/tareas_screen.dart';
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const HomeScreen(),
         '/noticias': (context) => const NoticiasScreen(),
         '/listaTareas': (context) => const ListaTareas(), 
-        //'/cambioMoneda': (context) => CambioMonedaPage(),  //cambiar el nombre segun la class
+        '/cambioMoneda': (context) => CambioMonedaPage(),
         
         //'/podcast': (context) => const PodcastPage(), // igual
       },

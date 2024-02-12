@@ -3,6 +3,8 @@ import 'package:go_router/go_router.dart';
 //import 'package:flutter_laboratorio_1/presentation/screens/divisas/divisas_screen.dart';
 import 'package:flutter_laboratorio_1/presentation/screens/home/home_screen.dart';
 import 'package:flutter_laboratorio_1/presentation/screens/noticias_screen.dart';
+import 'package:flutter_laboratorio_1/presentation/screens/home/monedas_screen.dart';
+
 
 final GoRouter router = GoRouter(
   routes: [
@@ -18,10 +20,10 @@ final GoRouter router = GoRouter(
       path: '/listaTareas',
       builder: (context, state) => const ListaTareas(),
     ),
-    /*GoRoute(
-      path: '/divisas',
-      builder: (context, state) => CambioMonedaPage(),
-    ),*/
+    GoRoute(
+      path: '/cambioMoneda',
+      builder: (context, state) => const CambioMonedaPage(),
+    ),
     /*GoRoute(
       path: '/podcast',
       builder: (context, state) => CambioMonedaPage(),
