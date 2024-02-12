@@ -45,7 +45,7 @@ class HomeScreen extends StatelessWidget {
               title: const Text('Podcast'),
               leading: const Icon(Icons.headset),
               onTap: () {
-                Navigator.pushNamed(context, '/podcast'); //Aqui lo cambias segun como esta en el path de router              
+                Navigator.pushNamed(context, '/podcast');
               },
             ),
           ],

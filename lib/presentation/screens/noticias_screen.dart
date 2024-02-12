@@ -23,7 +23,6 @@ class NoticiasScreen extends StatelessWidget {
             contenido: 'Estudiantes de Informática de la Universidad XYZ han donado cinco laptops al programa de vinculación de la institución. Esta acción solidaria permite fortalecer recursos para apoyar a otros estudiantes. A cambio, los donantes participarán en horas de vinculación, colaborando en proyectos y actividades universitarias. Su generosidad refleja un compromiso con el bienestar estudiantil y la colaboración comunitaria.',
             imagenUrl: 'https://www.shutterstock.com/image-vector/kid-online-learning-vector-child-600nw-2288905273.jpg',
           ),
-          // Agrega más noticias aquí si es necesario
         ],
       ),
     );
