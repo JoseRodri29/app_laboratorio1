@@ -22,7 +22,7 @@ final GoRouter router = GoRouter(
     ),
     GoRoute(
       path: '/cambioMoneda',
-      builder: (context, state) => const CambioMonedaPage(),
+      builder: (context, state) => CambioMonedaPage(),
     ),
     /*GoRoute(
       path: '/podcast',
