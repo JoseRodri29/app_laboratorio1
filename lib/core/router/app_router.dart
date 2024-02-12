@@ -1,3 +1,4 @@
+import 'package:flutter_laboratorio_1/presentation/screens/tareas_screen.dart';
 import 'package:go_router/go_router.dart';
 //import 'package:flutter_laboratorio_1/presentation/screens/divisas/divisas_screen.dart';
 import 'package:flutter_laboratorio_1/presentation/screens/home/home_screen.dart';
@@ -12,6 +13,10 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: '/noticias',
       builder: (context, state) => const NoticiasScreen(),
+    ),
+    GoRoute(
+      path: '/listaTareas',
+      builder: (context, state) => const ListaTareas(),
     ),
     /*GoRoute(
       path: '/divisas',

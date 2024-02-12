@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
               title: const Text('Lista de tareas'),
               leading: const Icon(Icons.list),
               onTap: () {
-                Navigator.pushNamed(context, '/listaTareas'); //Aqui lo cambias segun como esta en el path de router
+                Navigator.pushNamed(context, '/listaTareas');
               },
             ),
             ListTile(
